@@ -1,0 +1,7 @@
+= Neovim Configuration
+
+Simple Neovim configuration with a LSP working with:
+
+Rust, Ruby, Lua, TypeScript, HTML and CSS
+
+Feel free to PR
