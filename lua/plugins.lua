@@ -18,6 +18,8 @@ packer.startup({function(use)
   use { 'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons' }}
 
+  use 'windwp/nvim-autopairs'
+
   use 'neovim/nvim-lspconfig'
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'

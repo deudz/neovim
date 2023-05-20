@@ -1,4 +1,4 @@
-require('packages')
+require('plugins')
 require('lsp-config')
 require('nvim-config')
 require('map')
