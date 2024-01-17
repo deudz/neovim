@@ -7,10 +7,8 @@ local plugins = {
   },
 
   {
-    'nvim-lualine/lualine.nvim',
-    config = function()
-      require "plugins.configs.lualine"
-    end
+    'folke/neodev.nvim',
+    lazy = true
   },
 
   {
@@ -85,5 +83,4 @@ local plugins = {
   },
 }
 
-local opts = require "base.lazyconf"
-require('lazy').setup(plugins, opts)
+require('lazy').setup(plugins)

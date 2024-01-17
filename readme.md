@@ -1,13 +1,6 @@
 # Neovim Configuration
 
-This is a simple Neovim configuration made by me
+i rewrote it again so its better than ever now!!!<br/>
+i swear its the last time im rewriting this
 
-Rewrote everything from scratch to use `lazy.nvim`
-
-LSPs Supported:
-- C/C++
-- CMake
-- HTML
-- CSS
-- JS & TS
-- Lua
+**hurray!!**
