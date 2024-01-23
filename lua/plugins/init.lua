@@ -7,8 +7,11 @@ local plugins = {
   },
 
   {
-    'folke/neodev.nvim',
-    lazy = true
+    'nvim-tree/nvim-tree.lua',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    config = function ()
+      require('nvim-tree').setup {}
+    end
   },
 
   {
@@ -16,6 +19,11 @@ local plugins = {
     config = function()
       require "plugins.configs.treesitter"
     end
+  },
+
+  {
+    'nvim-telescope/telescope.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim' }
   },
 
   {
@@ -46,12 +54,24 @@ local plugins = {
     end
   },
 
+  {
+    'hiphish/rainbow-delimiters.nvim',
+    config = function()
+      require('rainbow-delimiters.setup').setup {}
+    end
+  },
+
   -- Completion
   {
     'neovim/nvim-lsp',
     config = function()
       require "plugins.configs.lspconfig"
     end
+  },
+
+  {
+    'folke/neodev.nvim',
+    lazy = true
   },
 
   {
@@ -73,6 +93,7 @@ local plugins = {
     dependencies = {
       {
         'saadparwaiz1/cmp_luasnip',
+        'L3MON4D3/luasnip',
         'hrsh7th/cmp-nvim-lua',
         'hrsh7th/cmp-nvim-lsp',
         'hrsh7th/cmp-buffer',
